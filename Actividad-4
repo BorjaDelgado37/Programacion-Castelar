@@ -1,0 +1,203 @@
+public class Actividad-4 {
+    
+
+public static void main(String[] args) {
+    boolean seguir = true;
+     
+    while (seguir == true) {
+    String ANSI_BLUE = "\u001B[42m" ;
+    String ANSI_GREEN_BACKGROUND = "\u001B[44m" ;
+    String ANSI_YELLOW_BACKGROUND = "\u001B[43m";
+    String ANSI_RED = "\u001B[41m";
+    String ANSI_CYAN_BACKGROUND = "\u001B[46m";
+    
+    System.out.println(ANSI_GREEN_BACKGROUND + ANSI_BLUE + "0. salir del todo 0   " +ANSI_CYAN_BACKGROUND +  "     oooooo  oooooo  " );
+    System.out.println(ANSI_GREEN_BACKGROUND + ANSI_BLUE + "1. Suma           1   " +ANSI_CYAN_BACKGROUND +  "          o      o   " );
+    System.out.println(ANSI_GREEN_BACKGROUND + ANSI_BLUE + "2. Resta          2   " +ANSI_CYAN_BACKGROUND +  "      ooooo     o    "  );
+    System.out.println(ANSI_GREEN_BACKGROUND + ANSI_BLUE + "3. Divide         3   " +ANSI_CYAN_BACKGROUND +  "          o    o     " );
+    System.out.println(ANSI_GREEN_BACKGROUND + ANSI_BLUE + "4. Multiplica     4   " +ANSI_CYAN_BACKGROUND +  "     oooooo   o      " );
+
+
+    Scanner lectura= new Scanner (System.in);
+    System.out.println("eligeme por teclado un numero: ");
+
+    int opcion = lectura.nextInt();
+
+    System.out.println("La opcion elegida es " + opcion ) ;
+  
+    switch(opcion) {
+         case 1 -> metodo1 () ;
+         case 2 -> metodo2 () ;
+         case 3 -> metodo3 () ;
+         case 4 -> metodo4 () ;
+         case 0 -> metodo5 () ;
+
+         efault -> System.out.println("los numeros solos son posibles del 1 al 5 ");
+            }
+    
+    }
+    
+}
+public static void metodo1() {
+    
+
+    String ANSI_CYAN_BACKGROUND = "\u001B[46m";
+    String ANSI_PURPLE_BACKGROUND = "\u001B[45m";
+    String ANSI_BLACK_BACKGROUND = "\u001B[40m";
+
+    System.out.println(ANSI_CYAN_BACKGROUND + "he llegado al metodo ");  
+
+    System.out.println(ANSI_PURPLE_BACKGROUND + "introduce tu primer numero : "); 
+  Scanner lectura = new Scanner (System.in);
+    int nota = lectura.nextInt();
+System.out.println(ANSI_PURPLE_BACKGROUND + "introduce otro numero : "); 
+   
+int noto = lectura.nextInt();
+
+int resultado=nota+noto;
+if (nota >= 0){        
+
+  System.out.println(  ANSI_CYAN_BACKGROUND  + "La suma es " + nota + " + " + noto + " = " + resultado );
+}
+
+
+
+
+
+}
+
+public static void metodo2() {
+
+
+
+String ANSI_CYAN_BACKGROUND = "\u001B[46m";
+    String ANSI_PURPLE_BACKGROUND = "\u001B[45m";
+    String ANSI_BLACK_BACKGROUND = "\u001B[40m";
+
+    System.out.println(ANSI_CYAN_BACKGROUND + "he llegado al metodo ");  
+
+    System.out.println(ANSI_PURPLE_BACKGROUND + "introduce tu primer numero : "); 
+  Scanner lectura = new Scanner (System.in);
+    int nota = lectura.nextInt();
+System.out.println(ANSI_PURPLE_BACKGROUND + "introduce otro numero : "); 
+   
+int noto = lectura.nextInt();
+
+int resultado=nota-noto;
+if (nota >= 0){        
+
+  System.out.println(  ANSI_BLACK_BACKGROUND  + "La resta es " + nota + " - " + noto + " = " + resultado );
+}
+
+
+
+
+
+}
+
+public static void metodo3() {
+String ANSI_CYAN_BACKGROUND = "\u001B[46m";    
+String ANSI_PURPLE_BACKGROUND = "\u001B[45m";
+    String ANSI_BLACK_BACKGROUND = "\u001B[40m";
+
+    System.out.println(ANSI_CYAN_BACKGROUND + "he llegado al metodo ");  
+
+    System.out.println(ANSI_PURPLE_BACKGROUND + "introduce tu primer numero : "); 
+  Scanner lectura = new Scanner (System.in);
+    int nota = lectura.nextInt();
+System.out.println(ANSI_PURPLE_BACKGROUND + "introduce otro numero : "); 
+   
+int noto = lectura.nextInt();
+
+float resultado=nota/noto;
+
+  System.out.println(  ANSI_BLACK_BACKGROUND  + "La division es " + nota + " : " + noto + " = " + resultado );   
+
+
+
+
+
+
+
+
+
+
+}
+
+
+public static void metodo4() {
+String ANSI_CYAN_BACKGROUND = "\u001B[46m";    
+String ANSI_PURPLE_BACKGROUND = "\u001B[45m";
+    String ANSI_BLACK_BACKGROUND = "\u001B[40m";
+
+    System.out.println(ANSI_CYAN_BACKGROUND + "he llegado al metodo ");  
+
+    System.out.println(ANSI_PURPLE_BACKGROUND + "introduce tu primer numero : "); 
+  Scanner lectura = new Scanner (System.in);
+    float nota = lectura.nextInt();
+System.out.println(ANSI_PURPLE_BACKGROUND + "introduce otro numero : "); 
+   
+float noto = lectura.nextInt();
+
+float resultado=nota*noto;
+
+  System.out.println(  ANSI_BLACK_BACKGROUND  + "La multiplicacion " + nota + " x " + noto + " = " + resultado );   
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
