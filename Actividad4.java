@@ -11,7 +11,7 @@ public class Actividad4 {
         if (EsMultiplo(x, y) == 0)
             System.out.println("El número " + x + " es multiplo de " + y);
         else
-            System.out.println("El número " + x + " no es multiplo de " + y);
+            System.out.println("El número xzxczcxzc" + x + " no es multiplo de " + y);
 
     }
 
